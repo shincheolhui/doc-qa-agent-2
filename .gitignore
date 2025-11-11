@@ -1,0 +1,28 @@
+# === Python 기본 무시 목록 ===
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.sqlite3
+.env
+
+# === 가상환경 ===
+.venv/
+venv/
+env/
+
+# === IDE / OS 파일 ===
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# === 데이터 디렉토리 ===
+data/uploads/*
+!data/uploads/.gitkeep   # uploads 폴더는 유지하고 내부 파일만 제외
+data/faiss_index/*
+!data/faiss_index/.gitkeep
+
+# === 기타 ===
+*.pdf
