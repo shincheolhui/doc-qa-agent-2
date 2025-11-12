@@ -51,28 +51,23 @@ doc-qa-agent-2/
 
 **Windows PowerShell**
 
-```bash
-python -m venv .venv
+> Python **3.11.x** 버전을 권장합니다.
+> (Windows 11 Pro + Cursor 2.0.64 환경 기준)
+
+```powershell
+# Python 3.11로 가상환경 생성
+py -3.11 -m venv .venv
 .venv\Scripts\activate
-```
-
-**macOS / Linux**
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
 ```
 
 ### ✅ 패키지 설치
 
 ```bash
+# pip 최신화
+python -m pip install --upgrade pip
+
+# 프로젝트 패키지 설치
 pip install -r requirements.txt
-```
-
-`requirements.txt`가 없다면 수동으로 설치:
-
-```bash
-pip install gradio langchain langchain-core langchain-community langchain-openai langchain-text-splitters faiss-cpu python-dotenv pypdf
 ```
 
 ---
