@@ -57,6 +57,8 @@ doc-qa-agent-2/
 ```powershell
 # Python 3.11로 가상환경 생성
 py -3.11 -m venv .venv
+
+# 가상환경 활성화
 .venv\Scripts\activate
 ```
 
